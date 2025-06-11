@@ -1,4 +1,3 @@
-
 from flask import Flask
 import requests
 
@@ -17,5 +16,5 @@ def send_message(text):
     payload = {"chat_id": CHAT_ID, "text": text}
     requests.post(url, data=payload)
 
-if __name__ == "__main__":
+if name == "__main__":
     app.run(host="0.0.0.0", port=8080)
